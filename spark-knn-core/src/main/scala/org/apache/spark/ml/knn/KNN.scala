@@ -2,6 +2,7 @@ package org.apache.spark.ml.knn
 
 import breeze.linalg.{DenseVector, Vector => BV}
 import breeze.stats._
+import breeze.stats.meanAndVariance._
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.ml.classification.KNNClassificationModel
 import org.apache.spark.ml.knn.KNN.{KNNPartitioner, RowWithVector, VectorWithNorm}
